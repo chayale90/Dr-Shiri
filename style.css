@@ -222,7 +222,7 @@ i {
 .end-page {
   background: url("./images/sl_021921_40900_13\ 2.png");
   width: 100vw;
-  height: 130vh;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
