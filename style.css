@@ -50,7 +50,6 @@ h1 {
 }
 p {
   font-size: 1.2rem;
-
   font-family: var(--secondary-font);
 }
 .blue_text {
@@ -244,14 +243,16 @@ i {
       a {
         border-radius: 31.379px;
         background: #1470a8;
-        padding: 5px;
+        padding: 11px;
         color: white;
         margin: 1rem;
         text-decoration: none;
+        border: none;
+        font-size: 1.2rem;
       }
     }
     img {
-      width: 100%;
+      width: 70%;
     }
     h3 {
       font-weight: 300;
@@ -263,6 +264,7 @@ i {
       padding: 4px 15px;
       border-radius: 1.5rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom: 10px;
     }
     i {
       margin-bottom: 8px;
@@ -273,14 +275,21 @@ i {
       color: black;
     }
     .buttons {
-      display: grid;
-      gap: 10px;
-      grid-template-rows: repeat(2, 1fr);
-      justify-items: center;
       align-items: center;
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      text-align: center;
+      .mail,
+      .address {
+        position: relative;
+        right: 60px;
+      }
     }
   }
 }
+
 @media (max-width: 1100px) {
   .main {
     grid-template-columns: repeat(2, 1fr);
@@ -336,7 +345,7 @@ i {
   .about-info img {
     width: 140%;
   }
-  .about-info { 
+  .about-info {
     width: 90%;
     height: 800px;
     p {
@@ -353,7 +362,6 @@ i {
     font-size: 3rem;
   }
   .end-page {
-    height: 100vh;
     h3 {
       font-size: 4rem;
     }
