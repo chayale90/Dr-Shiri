@@ -29,24 +29,21 @@ body {
   display: grid;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
+  align-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50% 50%;
   height: 635.54px;
   overflow: hidden;
+  align-items: center;
 }
 .details {
-  display: flex;
+  display: grid;
   grid-area: span 1;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
   align-items: center;
   height: 100%;
-  justify-content: center;
   animation: enterName 2s forwards ease-in;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
 }
 h1 {
   font-size: 2.2rem;
@@ -135,6 +132,7 @@ p {
   align-items: center;
   grid-area: span 1;
   height: 100%;
+  margin-top: 3rem;
 }
 h3 {
   padding: 1rem;
@@ -221,6 +219,7 @@ i {
     }
   }
 }
+
 .end-page {
   background: url("./images/sl_021921_40900_13\ 2.png");
   width: 100vw;
@@ -232,6 +231,7 @@ i {
   align-items: center;
   padding-top: 0.5rem;
   font-family: var(--Primary-font);
+
   .info {
     display: flex;
     flex-direction: column;
@@ -240,7 +240,8 @@ i {
     .small-wrapper {
       text-align: center;
       margin: 1rem;
-      .click, a {
+      .click,
+      a {
         border-radius: 31.379px;
         background: #1470a8;
         padding: 5px;
@@ -280,24 +281,81 @@ i {
     }
   }
 }
-
 @media (max-width: 1100px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .details {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 2.4rem;
+    }
+    .btn-about {
+      display: none;
+    }
+  }
   .entry-page {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 700px;
+    height: 950px;
+    padding: 1rem;
   }
   .details-2 {
     img {
-      width: 450px;
-      height: 300px;
-      left: -8px;
+      width: 600px;
+      height: 400px;
+      left: -10px;
     }
   }
   .contact {
-    margin-left: 2px;
+    margin-left: 3px;
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
   }
   .small-message {
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+    p,
+    i {
+      font-size: 2.6rem;
+    }
+  }
+  .about-info img {
+    width: 140%;
+  }
+  .about-info {
+    width: 90%;
+    height: 800px;
+    p {
+      font-size: 2rem;
+    }
+  }
+  .overlay {
+    width: 90%;
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+  .services {
+    font-size: 3rem;
+  }
+  .end-page {
+    height: 100vh;
+    h3 {
+      font-size: 4rem;
+    }
   }
 }
