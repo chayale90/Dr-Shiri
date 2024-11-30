@@ -336,7 +336,7 @@ i {
   .about-info img {
     width: 140%;
   }
-  .about-info {
+  .about-info { 
     width: 90%;
     height: 800px;
     p {
