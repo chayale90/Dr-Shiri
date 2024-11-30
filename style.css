@@ -261,8 +261,9 @@ i {
     .button {
       background-color: #effafd;
       border: none;
-      padding: 4px 15px;
-      border-radius: 1.5rem;
+      width: 70px;
+      padding: 11px 15px;
+      border-radius: 1.9rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       margin-bottom: 10px;
     }
