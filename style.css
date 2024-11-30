@@ -222,7 +222,7 @@ i {
 .end-page {
   background: url("./images/sl_021921_40900_13\ 2.png");
   width: 100vw;
-  height: 116vh;
+  height: 130vh;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -256,12 +256,13 @@ i {
     h3 {
       font-weight: 300;
       font-family: var(--secondary-font);
+      font-size: 3rem;
     }
     .button {
       background-color: #effafd;
       border: none;
       width: 70px;
-      padding: 11px 15px;
+      padding: 13px 15px;
       border-radius: 1.9rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       margin-bottom: 10px;
@@ -269,6 +270,7 @@ i {
     i {
       margin-bottom: 8px;
       color: black;
+      font-size: 1.3rem;
     }
     .developer a {
       margin-top: 1rem;
