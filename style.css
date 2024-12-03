@@ -391,7 +391,7 @@ i {
     font-size: 3rem;
   }
   .end-page {
-    height: 900px;
+    height: fit-content;
     h3 {
       font-size: 4rem;
     }
