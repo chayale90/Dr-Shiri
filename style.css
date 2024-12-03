@@ -191,7 +191,7 @@ i {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-items: center;
+  justify-items: end;
   width: 70%;
   padding: 1.2rem;
   height: 480px;
@@ -202,10 +202,21 @@ i {
   .wrapper {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    align-items: end;
   }
   img {
     width: 225px;
     height: 308px;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .personal-info {
+    display: flex;
+    height: 93px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
   }
 }
 .overlay {
@@ -265,7 +276,7 @@ i {
     }
     h3 {
       font-weight: 300;
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     .button {
       background-color: #effafd;
@@ -331,7 +342,7 @@ i {
     img {
       margin-top: 1rem;
       width: 1250px;
-      height: 650px;
+      height: 670px;
     }
   }
   .contact {
@@ -357,15 +368,15 @@ i {
       font-size: 2.6rem;
     }
   }
-  .about-info img {
-    width: 120%;
-    height: 80%;
-  }
+
   .about-info {
     width: 90%;
-    height: 850px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
     p {
       font-size: 1.6rem;
+      text-align: right;
     }
   }
   .overlay {
@@ -379,16 +390,23 @@ i {
     font-size: 3rem;
   }
   .end-page {
-    height: fit-content;
+    height: 900px;
     h3 {
       font-size: 4rem;
     }
   }
   .buttons {
-     .mail,
-      .address {
-        right: 120px;
-      }
+    .mail,
+    .address {
+      right: 120px;
+    }
   }
-  
+  .small-wrapper {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .wa_btn_container img {
+    width: 145px;
+  }
 }
