@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --Primary-font: "Open Sans";
+  --Primary-font: "Assistant";
   --Primary-color: #4195c7;
-  --secondary-font: "Varela Round";
 }
 body {
   display: flex;
@@ -41,7 +40,6 @@ body {
   align-items: center;
   height: 100%;
   animation: enterName 2s forwards ease-in;
-  grid-template-rows: 1fr 1fr;
   align-content: center;
   justify-items: center;
 }
@@ -50,7 +48,6 @@ h1 {
 }
 p {
   font-size: 1.2rem;
-  font-family: var(--secondary-font);
 }
 .blue_text {
   color: var(--Primary-color);
@@ -131,7 +128,7 @@ p {
   align-items: center;
   grid-area: span 1;
   height: 100%;
-  margin-top: 3.5rem;
+  padding-top: 3.5rem;
 }
 h3 {
   padding: 1rem;
@@ -152,7 +149,6 @@ h3 {
 }
 .item {
   display: flex;
-  font-family: var(--secondary-font);
   text-align: center;
   width: 140px;
   height: 140px;
@@ -190,7 +186,6 @@ i {
   cursor: pointer;
 }
 .about-info {
-  background: url("./images/polygon-scatter-haikei.png") no-repeat left;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: grid;
@@ -199,6 +194,19 @@ i {
   justify-items: center;
   width: 70%;
   padding: 1.2rem;
+  height: 480px;
+  h2,
+  p {
+    margin-right: 15px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  img {
+    width: 225px;
+    height: 308px;
+  }
 }
 .overlay {
   background-color: #effafd;
@@ -206,10 +214,12 @@ i {
   padding: 2rem;
   height: 280px;
   h3 {
+    color: #212529;
     text-align: center;
+    font-family: Assistant;
+    font-size: 40px;
+    font-style: normal;
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 44px;
     &&::after,
     &&::before {
       content: '"';
@@ -255,7 +265,6 @@ i {
     }
     h3 {
       font-weight: 300;
-      font-family: var(--secondary-font);
       font-size: 3rem;
     }
     .button {
@@ -292,47 +301,52 @@ i {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1070px) {
   .main {
     grid-template-columns: repeat(2, 1fr);
   }
   .details {
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
     h1 {
       font-size: 3.5rem;
     }
     p {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
     .btn-about {
       display: none;
     }
   }
   .entry-page {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 950px;
+    overflow: hidden;
+    height: 1250px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .details-2 {
     img {
-      width: 600px;
-      height: 400px;
-      left: -10px;
+      margin-top: 1rem;
+      width: 941px;
+      height: 650px;
     }
   }
   .contact {
     margin-left: 3px;
-    padding: 0.8rem 4rem;
+    padding: 1rem 4rem;
     border-radius: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .small-message {
-    margin: 1.5rem 1.7rem;
     h3 {
       font-size: 3rem;
     }
     p {
-      font-size: 2rem;
+      font-size: 2.2rem;
       text-align: center;
     }
   }
@@ -345,25 +359,28 @@ i {
     }
   }
   .about-info img {
-    width: 140%;
+    width: 120%;
+    height: 80%;
   }
   .about-info {
     width: 90%;
-    height: 800px;
+    height: 850px;
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
   .overlay {
     width: 90%;
     h3 {
-      font-size: 2.4rem;
+      font-size: 2rem;
+      line-height: 66px;
     }
   }
   .services {
     font-size: 3rem;
   }
   .end-page {
+    height: 790px;
     h3 {
       font-size: 4rem;
     }
