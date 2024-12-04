@@ -348,8 +348,8 @@ i {
   .details-2 {
     img {
       margin-top: 1rem;
-      width: 1146px;
-      height: 710px;
+      width: 1112px;
+      height: 706px;
     }
   }
   .contact {
@@ -427,6 +427,10 @@ i {
     }
     .developer {
       font-size: 1rem;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 300;
     }
   }
   .small-wrapper {
