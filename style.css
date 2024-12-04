@@ -324,7 +324,7 @@ i {
     grid-template-columns: repeat(2, 1fr);
   }
   .details {
-        display: grid;
+    display: grid;
     justify-items: center;
     align-content: center;
     h1 {
@@ -344,15 +344,12 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    p {
-      font-size: 2.6rem;
-    }
   }
   .details-2 {
     img {
       margin-top: 1rem;
-      width: 1185px;
-      height: 715px;
+      width: 1146px;
+      height: 710px;
     }
   }
   .contact {
@@ -418,7 +415,7 @@ i {
   .end-page {
     height: fit-content;
     h3 {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
     .info {
       .buttons {
@@ -427,6 +424,9 @@ i {
           right: 57px;
         }
       }
+    }
+    .developer {
+      font-size: 1rem;
     }
   }
   .small-wrapper {
