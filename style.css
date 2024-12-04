@@ -424,10 +424,11 @@ i {
       font-size: 30px;
     }
     .info {
+      text-align: center;
       .buttons {
         .mail,
         .address {
-          right: 61px;
+          right: 60px;
         }
       }
     }
