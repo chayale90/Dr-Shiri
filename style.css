@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@
 }
 body {
   font-family: "Assistant", sans-serif;
+  overflow-x: hidden;
 }
 .entry-page {
   background: url("./images/bb8348bfb82f5da6c986da4a7c5899d3854750f7.jpg")
@@ -304,12 +306,85 @@ h2 {
     font-weight: 400;
   }
 }
+@media screen and (max-width: 1024px) {
+  /* Match 912px layout, scaled for slightly wider screens */
+  body {
+    overflow-x: hidden;
+  }
+  .details {
+    /* Fit to viewport width */
+    width: 100%;
+    padding: 0 16px;
+    h1 {
+      font-size: 2.6rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .btn-about {
+      display: none;
+    }
+  }
+  .wrapper {
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    .small-message {
+      h3 {
+        font-weight: 700;
+        color: var(--Primary-color);
+        font-family: "Assistant";
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .details-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    top: 0;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    .contact {
+      margin-top: 1.2rem;
+    }
+  }
+  .section_2 .main {
+    grid-template-columns: repeat(2, auto);
+  }
+  .about-info {
+    height: 600px;
+    width: 900px;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .personal-info h3,
+  h2 {
+    font-family: "Assistant";
+  }
+  .overlay {
+    width: 900px;
+  }
+  .end-page {
+    height: 800px;
+  }
+}
 @media screen and (max-width: 912px) {
   body {
     overflow-x: hidden;
   }
   .details {
-    width: 888px;
+    /* On small screens, let the header details fit the viewport width */
+    width: 100%;
+    padding: 0 16px;
     h1 {
       font-size: 2.6rem;
     }
@@ -434,12 +509,23 @@ h2 {
     width: 400px;
     height: 300px;
   }
-   .section_2 {
+  .section_2 {
     .main .item {
       width: 150px;
       height: 140px;
       font-size: 1.2rem;
     }
+  }
+}
+@media screen and (max-width: 390px) {
+  /* Avoid horizontal overflow on the smallest phones */
+  .section_2 .main {
+    grid-template-columns: 1fr; /* stack items */
+    justify-items: center;
+  }
+  .section_2 .main .item {
+    width: 240px;
+    height: 160px;
   }
 }
 @media screen and (max-width: 425px) {
