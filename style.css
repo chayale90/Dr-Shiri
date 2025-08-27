@@ -220,7 +220,7 @@ body {
 }
 .end-page {
   background: url("./images/sl_021921_40900_13\ 2.png") no-repeat;
-  height: 900px;
+  height: 930px;
   flex-shrink: 0;
   background-size: cover;
   display: flex;
@@ -252,14 +252,18 @@ body {
     justify-self: center;
   }
   .button {
-    border-radius: 19.25px;
+    border-radius: 35px;
     background: rgba(255, 255, 255, 0);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 10px 12px;
+    padding: 20px 24px;
     border: none;
   }
   p {
     margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  i {
+    font-size: 1.4rem;
   }
 }
 .info {
@@ -325,6 +329,13 @@ h2 {
       display: none;
     }
   }
+  .section_2 {
+    .main .item {
+      width: 280px;
+      height: 280px;
+      font-size: 2rem;
+    }
+  }
   .wrapper {
     height: 700px;
     display: grid;
@@ -374,7 +385,7 @@ h2 {
     width: 900px;
   }
   .end-page {
-    height: 800px;
+    height: 870px;
   }
 }
 @media screen and (max-width: 912px) {
@@ -537,4 +548,3 @@ h2 {
     width: 320px;
     height: 300px;
   }
-}
